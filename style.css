@@ -1,0 +1,154 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    margin:0;
+}
+
+/* -------- Typography -------- */
+
+h1{
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-shadow: 0 1px #816fca;
+}
+
+main h2{
+    font-size: 2.25rem;
+    margin:0.3em 0;
+}
+.beta-text { 
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.subheading {
+    color: #575757;
+    font-weight: 900;
+    margin:0 0 0.7em 0;
+    text-transform: uppercase;
+}
+
+/* ------- Intro ------- */
+
+.intro { 
+    color: #fff;
+    background-color: #9480e4;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    justify-content: space-between;
+    text-align: center;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5em 2em 0 2em;
+}
+
+.intro,.main-content{
+    padding: 0 2em 0.5em 2em;
+}
+
+.main-content p{
+    font-size: 1.125rem;
+    line-height: 1.35;
+    max-width: 470px;
+}
+
+form{
+    max-width: 470px;
+}
+
+
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
+}
+
+.top-text{
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding-top: 0.25em;
+    border-top: 5px solid;
+    margin:0 auto;
+    order:-1;
+}
+
+input{
+    width: 100%;
+    font-family: inherit;
+    padding:0.5em;
+    margin-bottom: 0.7em;
+    border:2px solid #d1d5db;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+    background-color:#e6e8ec;
+    border:2px solid #8a71ec;
+}
+
+.btn{
+    font-family: inherit;
+    width:100%;
+    text-transform: uppercase;
+    border:none;
+    font-size: 1.15rem;
+    padding:0.3em;
+    border-radius: 3px;
+}
+
+.btn-primary{
+    color:#fff;
+    background-color: #8a71ec;
+}
+
+.btn-primary:hover,.btn-primary:focus{
+    background-color: #b7a7f6;
+    cursor: pointer;
+}
+
+.img-main{
+    width:130px;
+    height:130px;
+    border-radius: 50%;
+    margin-top: 0.2em;
+}
+
+/* ------- Media Queries ------- */
+
+@media (min-width:576px){
+    body{
+        display: flex;
+    }
+    .intro,.main-content{
+        min-height: 100vh;
+        width:50dvw;
+    }
+    .main-content{
+        justify-content: center;
+        padding-top: 0;
+    }
+    h1{
+        font-size: 5.5vw;
+    }
+    main h2{
+        font-size: 2.65rem;
+    }
+    .beta-text{
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width:1500px){
+    .top-text,.beta-text{
+        font-size: 1.75rem;
+    }
+}
